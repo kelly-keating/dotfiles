@@ -15,10 +15,9 @@ if [ -d "/opt/platform-tools" ]; then
 	export PATH="/opt/platform-tools/:$PATH"
 fi
 
-# Ruby gems
-if [ -d "$HOME/.gems" ]; then
-	export GEM_HOME=$HOME/.gems
-	export PATH=$GEM_HOME/bin:$PATH
+# NodeJS
+if [ -d "/opt/nodejs" ]; then
+	export PATH="/opt/nodejs/bin/:$PATH"
 fi
 
 # aliases
